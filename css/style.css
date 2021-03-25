@@ -25,8 +25,7 @@
 .top-fxd-nav {
   position: fixed;
   right: 0;
-  z-index: -1;
-  width: calc(100vw - 230px);
+  width: calc(100% - 230px);
   height: 90px;
   /* background-color: #080b12; */
   background-color: lightgreen;
@@ -49,7 +48,7 @@
 
 .main-content {
   margin-top: 90px;
-  width: calc(100vw - 230px);
+  width: calc(100% - 230px);
   height: calc(100vh - 180px);
   color: white;
   /* background-color: #141922; */
