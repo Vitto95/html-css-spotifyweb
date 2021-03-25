@@ -1,5 +1,73 @@
+/* GLOBAL */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+/* /GLOBAL */
+
+/* MAIN */
+
+/* TOP FIXED NAVBAR */
+
+.top-fxd-nav {
+  position: fixed;
+  right: 0;
+  z-index: -1;
+  width: calc(100vw - 230px);
+  height: 90px;
+  /* background-color: #080b12; */
+  background-color: lightgreen;
+}
+
+/* /TOP FIXED NAVBAR */
+
+/* LEFT NAVBAR */
+
+.left-nav {
+  width: 230px;
+  height: calc(100vh - 90px);
+  /* background-color: #000000; */
+  background-color: lightsalmon;
+}
+
+/* /LEFT NAVBAR */
+
+/* MAIN CONTENT */
+
+.main-content {
+  margin-top: 90px;
+  width: calc(100vw - 230px);
+  height: calc(100vh - 180px);
+  color: white;
+  /* background-color: #141922; */
+  background-color: darkgray;
+  overflow-y: auto;
+}
+
+/* /MAIN CONTENT */
+
+/* BOTTOM PLAYER */
+
+.bottom-player {
+  width: 100vw;
+  height: 90px;
+  /* background-color: #282828; */
+  background-color: lightseagreen;
+}
+
+/* /BOTTOM PLAYER */
+
+/* MAIN */
