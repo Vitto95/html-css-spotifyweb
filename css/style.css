@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
 .clearfix:after {
   content: "";
   display: table;
@@ -16,6 +20,26 @@
   float: left;
 }
 
+.pad-left-20 {
+  padding-left: 20px;
+}
+
+/* list global */
+
+ul li {
+  list-style-type: none;
+}
+
+/* /list global */
+
+/* text global */
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/* /text-global */
+
 /* /GLOBAL */
 
 /* MAIN */
@@ -25,10 +49,26 @@
 .top-fxd-nav {
   position: fixed;
   right: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   width: calc(100% - 230px);
   height: 90px;
-  /* background-color: #080b12; */
-  background-color: lightgreen;
+  background-color: #080b12;
+  /* background-color: lightgreen; */
+}
+
+.top-fxd-nav .btn-white-blue {
+  font-family: "Montserrat", sans-serif;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  padding-right: 35px;
+  padding-left: 35px;
+  color: white;
+  background-color: #05070b;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin-right: 10px;
 }
 
 /* /TOP FIXED NAVBAR */
@@ -38,9 +78,87 @@
 .left-nav {
   width: 230px;
   height: calc(100vh - 90px);
-  /* background-color: #000000; */
-  background-color: lightsalmon;
+  display: flex;
+  flex-flow: column;
+  background-color: #000000;
+  color: white;
+  padding-left: 20px;
 }
+
+/* logo */
+
+.left-nav > .logo-wrapper {
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+
+.left-nav > .logo-wrapper > img {
+  height: 40px;
+}
+
+/* /logo */
+
+/* left menù */
+
+.left-menu li {
+  display: flex;
+  align-items: center;
+}
+
+.left-menu li:nth-child(1),
+.left-menu li:nth-child(2) {
+  margin-bottom: 10px;
+}
+
+.left-menu > li > img {
+  height: 25px;
+  margin-right: 5px;
+}
+
+.left-menu > li > span {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+/* /left menù */
+
+/* left playlist */
+
+.left-playlist {
+  margin-top: 30px;
+}
+
+.new-playlist {
+  display: flex;
+  align-items: baseline;
+}
+
+.new-playlist > span {
+  font-weight: 600;
+}
+
+.new-playlist > .box-plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  margin-right: 10px;
+  color: #05070b;
+  background-color: #a3a3a3;
+}
+
+.vg-plus-custom {
+  font-size: 1.2rem;
+}
+
+.playlist-name {
+  line-height: 30px;
+}
+
+/* /left playlist */
 
 /* /LEFT NAVBAR */
 
