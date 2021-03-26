@@ -165,10 +165,9 @@ ul li {
 /* left playlist */
 
 .left-playlist {
-  height: 300px;
+  height: calc(100% - 275px);
   margin-top: 30px;
   padding-left: 20px;
-  overflow-y: auto;
 }
 
 .new-playlist {
@@ -198,6 +197,10 @@ ul li {
 
 .playlist-name > li {
   margin-top: 20px;
+}
+
+.playlist-name {
+  overflow-y: auto;
 }
 
 .playlist-name > li > a {
@@ -262,8 +265,8 @@ ul li {
   width: calc(100% - 230px);
   height: calc(100vh - 180px);
   color: white;
-  /* background-color: #141922; */
-  background-color: darkgray;
+  background-color: #141922;
+  /* background-color: darkgray; */
   overflow-y: auto;
 }
 
