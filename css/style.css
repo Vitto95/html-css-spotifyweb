@@ -24,6 +24,14 @@ body {
   padding-left: 20px;
 }
 
+/* link global */
+
+a {
+  text-decoration: none;
+}
+
+/* /link global */
+
 /* list global */
 
 ul li {
@@ -43,6 +51,15 @@ ul li {
 /* /GLOBAL */
 
 /* MAIN */
+
+/* WRAPPER */
+
+#wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+/* /WRAPPER */
 
 /* TOP FIXED NAVBAR */
 
@@ -76,24 +93,29 @@ ul li {
 /* LEFT NAVBAR */
 
 .left-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   width: 230px;
   height: calc(100vh - 90px);
-  display: flex;
-  flex-flow: column;
   background-color: #000000;
   color: white;
-  padding-left: 20px;
+}
+
+.top-left-nav {
+  height: calc(100% - 80px);
 }
 
 /* logo */
 
-.left-nav > .logo-wrapper {
+.left-nav .logo-wrapper {
   height: 90px;
   display: flex;
   align-items: center;
+  padding-left: 20px;
 }
 
-.left-nav > .logo-wrapper > img {
+.left-nav .logo-wrapper img {
   height: 40px;
 }
 
@@ -101,22 +123,39 @@ ul li {
 
 /* left menù */
 
+.left-menu {
+  height: 105px;
+}
+
 .left-menu li {
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
-.left-menu li:nth-child(1),
-.left-menu li:nth-child(2) {
-  margin-bottom: 10px;
+.left-menu li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
 }
 
-.left-menu > li > img {
+.left-menu li:first-child {
+  padding-left: 18px;
+  border-left: 2px solid #adff2f;
+}
+
+.left-menu li img {
   height: 25px;
   margin-right: 5px;
 }
 
-.left-menu > li > span {
+.left-menu li:active {
+  padding-left: 18px;
+  border-left: 2px solid #adff2f;
+}
+
+.left-menu li a {
+  color: white;
   font-size: 13px;
   font-weight: 600;
 }
@@ -126,7 +165,10 @@ ul li {
 /* left playlist */
 
 .left-playlist {
+  height: 300px;
   margin-top: 30px;
+  padding-left: 20px;
+  overflow-y: auto;
 }
 
 .new-playlist {
@@ -154,11 +196,62 @@ ul li {
   font-size: 1.2rem;
 }
 
-.playlist-name {
-  line-height: 30px;
+.playlist-name > li {
+  margin-top: 20px;
+}
+
+.playlist-name > li > a {
+  color: white;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 /* /left playlist */
+
+/* bottom left navbar */
+
+.bottom-left-nav {
+  height: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.bottom-left-nav a {
+  color: white;
+}
+
+.bottom-left-nav .user-img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.bottom-left-nav .user-img img {
+  width: 25px;
+  height: 25px;
+}
+
+.install-app {
+  padding-bottom: 11px;
+  border-bottom: 1px solid white;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 5px;
+}
+
+.user-info span {
+  font-size: 15px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* bottom left navbar */
 
 /* /LEFT NAVBAR */
 
