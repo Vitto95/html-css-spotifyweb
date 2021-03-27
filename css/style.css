@@ -108,6 +108,7 @@ ul li {
   height: calc(100vh - 90px);
   background-color: #000000;
   color: white;
+  overflow-y: hidden;
 }
 
 .top-left-nav {
@@ -380,15 +381,54 @@ ul li {
 /* BOTTOM PLAYER */
 
 .bottom-player {
-  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100vw; */
   height: 90px;
-  /* background-color: #282828; */
-  background-color: lightseagreen;
+  background-color: #282828;
+  /* background-color: lightseagreen; */
+}
+
+/* left player */
+
+.left-player {
+  display: flex;
+  align-items: center;
+}
+
+.box-img-bottom img {
+  width: 40px;
+}
+
+/* /left player */
+
+.center-player .current-song {
+  display: flex;
+  align-items: center;
+}
+
+.center-player .player-buttons {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.center-player .current-song .flexible-bar {
+  width: 30vw;
+  height: 3px;
+  background-color: white;
+  opacity: 0.5;
+}
+
+.center-player .current-song .flexible-bar .current-status {
+  width: 20%;
+  height: 100%;
+  background-color: tomato;
 }
 
 /* /BOTTOM PLAYER */
 
-/* MAIN */
+/* /MAIN */
 
 /* MEDIA QUERY CUSTOM */
 
