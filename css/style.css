@@ -90,6 +90,14 @@ ul li {
 
 /* /TOP FIXED NAVBAR */
 
+/* XS LEFT NAVBAR */
+
+.xs-left-navbar {
+  display: none;
+}
+
+/* /XS LEFT NAVBAR */
+
 /* LEFT NAVBAR */
 
 .left-nav {
@@ -270,6 +278,103 @@ ul li {
   overflow-y: auto;
 }
 
+/* top links */
+
+.top-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-links .list-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.top-links .list-links li {
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.top-links .list-links li a {
+  font-size: 13.1px;
+  font-weight: 600;
+  opacity: 0.5;
+  color: white;
+}
+
+/* /top links */
+
+/* recently played */
+
+.recently-played {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.box {
+  float: left;
+  width: calc((100% / 6) - 10px);
+  margin-top: 30px;
+  margin-right: 10px;
+  /* background-color: salmon; */
+}
+
+.box a {
+  display: inline-block;
+  width: 100%;
+}
+
+/* img e inheritance width height */
+/* capire perche img si ridimensiona uguale senza dare ad a dimensioni */
+
+.box a img {
+  width: 100%;
+  height: auto;
+  object-fit: fill;
+}
+
+@media all and (min-width: 768px) and (max-width: 991px) {
+  .recently-played .box {
+    width: calc(25% - 10px);
+  }
+}
+
+@media all and (max-width: 767px) {
+  .recently-played .box {
+    width: calc(50% - 10px);
+  }
+}
+
+/* /recently played */
+
+/* created for */
+
+.created-for {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+/* /created for */
+
+/* most popular artists */
+
+.popular-artists {
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* /most popular artists */
+
 /* /MAIN CONTENT */
 
 /* BOTTOM PLAYER */
@@ -284,3 +389,29 @@ ul li {
 /* /BOTTOM PLAYER */
 
 /* MAIN */
+
+/* MEDIA QUERY CUSTOM */
+
+@media all and (max-width: 576px) {
+  .top-fxd-nav {
+    width: calc(100% - 50px);
+  }
+
+  .left-nav {
+    display: none;
+  }
+
+  .xs-left-nav {
+    float: left;
+    display: block;
+    width: 50px;
+    height: calc(100vh - 90px);
+    background-color: #000000;
+  }
+
+  .main-content {
+    width: calc(100% - 50px);
+  }
+}
+
+/* /MEDIA QUERY CUSTOM */
