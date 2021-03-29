@@ -330,7 +330,9 @@ ul li {
 }
 
 .box:hover .box-hover {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box {
@@ -343,6 +345,7 @@ ul li {
 }
 
 .box a {
+  position: relative;
   display: block;
   width: 100%;
 }
@@ -351,8 +354,11 @@ ul li {
   position: absolute;
   display: none;
   width: 100%;
-  height: auto;
-  background-color: tomato;
+  height: 100%;
+}
+
+.box-hover .play-hover {
+  font-size: 60px;
 }
 
 /* img e inheritance width height */
