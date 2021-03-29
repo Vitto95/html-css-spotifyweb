@@ -320,6 +320,11 @@ ul li {
   width: 100%;
   padding-left: 20px;
   padding-right: 30px;
+  margin-bottom: 40px;
+}
+
+.row {
+  width: 100%;
 }
 
 .box {
@@ -344,6 +349,23 @@ ul li {
   object-fit: fill;
 }
 
+.box h4,
+.box p {
+  text-align: center;
+}
+
+.box h4 {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.box p {
+  margin-top: 10px;
+  font-size: 13px;
+  font-weight: 600;
+  opacity: 0.5;
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .box {
     width: calc(25% - 10px);
@@ -362,6 +384,7 @@ ul li {
 
 .created-for {
   width: 100%;
+  margin-bottom: 35px;
   padding-left: 20px;
   padding-right: 30px;
 }
@@ -380,6 +403,12 @@ ul li {
   border-radius: 50%;
 }
 
+.popular-artists p,
+.created-for p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+
 /* /most popular artists */
 
 /* /MAIN CONTENT */
@@ -392,6 +421,7 @@ ul li {
   align-items: center;
   /* width: 100vw; */
   height: 90px;
+  color: white;
   padding-left: 10px;
   padding-right: 10px;
   background-color: #282828;
@@ -403,6 +433,19 @@ ul li {
 .left-player {
   display: flex;
   align-items: center;
+}
+
+.left-player .song-infos {
+  margin-left: 10px;
+  margin-right: 40px;
+}
+
+.left-player .song-infos h5 {
+  font-size: 12px;
+}
+
+.left-player .song-infos p {
+  font-size: 10px;
 }
 
 .box-img-bottom img {
@@ -446,20 +489,47 @@ ul li {
   display: inline-block;
 }
 
+.current-song p {
+  font-size: 9.5px;
+  font-weight: 600;
+}
+
 .center-player .current-song .flexible-bar {
   width: 30vw;
   height: 3px;
-  background-color: white;
-  opacity: 0.5;
+  margin-right: 20px;
+  margin-left: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
 }
 
 .center-player .current-song .flexible-bar .current-status {
   width: 20%;
   height: 100%;
-  background-color: tomato;
+  background-color: white;
 }
 
 /* /center player */
+
+/* right player */
+
+.right-player {
+  display: flex;
+  align-items: center;
+}
+
+.right-player .flexible-bar {
+  width: 8vw;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.right-player .flexible-bar .current-status {
+  width: 30%;
+  height: 100%;
+  background-color: white;
+}
+
+/* /right player */
 
 /* /BOTTOM PLAYER */
 
