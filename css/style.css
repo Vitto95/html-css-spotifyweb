@@ -574,9 +574,27 @@ ul li {
 }
 
 .right-player .flexible-bar .current-status {
+  position: relative;
   width: 30%;
   height: 100%;
   background-color: white;
+  cursor: pointer;
+}
+
+.right-player .flexible-bar:hover .current-status {
+  background-color: #adff2f;
+}
+
+.right-player .flexible-bar:hover .current-status:after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
 }
 
 /* /right player */
