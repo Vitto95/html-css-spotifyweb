@@ -24,6 +24,10 @@ body {
   padding-left: 20px;
 }
 
+.op-half {
+  opacity: 0.5;
+}
+
 /* link global */
 
 a {
@@ -185,7 +189,7 @@ ul li {
   align-items: baseline;
 }
 
-.new-playlist > span {
+.new-playlist a {
   font-weight: 600;
 }
 
